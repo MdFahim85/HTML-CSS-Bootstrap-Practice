@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body id="home">
+    <!-- Nav -->
+    <nav>
+      <div class="nav">
+        <a href="#home" class="navItem">Home</a>
+        <a href="#about" class="navItem">About</a>
+        <a href="#projects" class="navItem">Projects</a>
+        <a href="#skills" class="navItem">Skills</a>
+        <a href="#education" class="navItem">Education</a>
+        <a href="#contact" class="navItem">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="heroImage">
+        <div class="myPfp">
+          <img src="assets/myPfp.png" alt="myPfp" class="myPfp" />
+        </div>
+      </div>
+      <div class="heroSection">
+        <h1 class="title">I'm a</h1>
+        <h1 class="title dark">Software Developer</h1>
+        <p class="description">
+          I am a software engineer with a passion for building
+          <span>web applications</span>. I have experience in various
+          <span>programming languages</span> and <span>frameworks</span> and I
+          am always eager to learn new technologies.
+        </p>
+        <span class="buttons">
+          <a href="#about"><button class="startBtn btn">Get Started</button></a>
+          <a href="assets/Md_Fahim_CV.pdf" download>
+            <button class="cvBtn btn">Download Resume</button></a
+          >
+        </span>
+        <div class="heroIcons">
+          <a href="https://github.com/MdFahim85" target="_blank">
+            <i class="fa-brands fa-github fa-xl"></i>
+          </a>
+          <a href="https://linkedin.com/in/md-fahim-8b9b04330/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+          </a>
+          <a href="mailto:mortuza.aziz.47@gmail.com" target="_blank">
+            <i class="fa-regular fa-envelope fa-xl"></i>
+          </a>
+          <a href="tel:+8801957939711">
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- About Me -->
+    <div class="aboutMe" id="about">
+      <div class="aboutInfo">
+        <h1 class="title">About Me</h1>
+        <p class="dark aboutDescription">
+          I am a software engineer with a passion for building web applications.
+          I have experience in various programming languages and frameworks and
+          I am always eager to learn new technologies.<br /><br />
+          I enjoy solving complex problems and creating efficient solutions. I
+          am a team player and I believe that collaboration is key to success.
+        </p>
+        <a href="#projects"
+          ><button class="startBtn btn">View My Work</button>
+        </a>
+      </div>
+      <div class="aboutPhoto">
+        <img src="assets/myPfp.png" alt="myPfp" class="aboutPhoto" />
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="projectCards">
+        <div class="projectCard">
+          <h2 class="title">Online PC Shop</h2>
+          <p class="projectDescription">
+            A complete e-commerce platform built using the MERN stack (MongoDB,
+            Express.js, React, Node.js). Features include product catalog,
+            shopping cart, user authentication with JWT, and admin dashboard.
+          </p>
+          <div class="techs">
+            <span class="tech"><p>React</p></span>
+            <span class="tech"><p>Node.js</p></span>
+            <span class="tech"><p>Express</p></span>
+            <span class="tech"><p>MongoDB</p></span>
+            <span class="tech"><p>JWT</p></span>
+            <span class="tech"><p>Redux</p></span>
+          </div>
+          <a href="https://github.com/MdFahim85/Online-PC-Shop"
+            ><button class="startBtn btn">Source Code</button></a
+          >
+        </div>
+        <div class="projectCard">
+          <h2 class="title">Chess Game</h2>
+          <p class="projectDescription">
+            A machine learning project that analyzes chess games to predict
+            outcomes. Trained on 100K+ chess matches, analyzing opening
+            strategies, player ratings, and game metadata.
+          </p>
+          <div class="techs">
+            <span class="tech"><p>Python</p></span>
+            <span class="tech"><p>Pandas</p></span>
+            <span class="tech"><p>NumPy</p></span>
+            <span class="tech"><p>Matplotlib</p></span>
+            <span class="tech"><p>Scikit-learn</p></span>
+          </div>
+          <a href="https://github.com/MdFahim85/Machine-Learning-Project"
+            ><button class="startBtn btn">Source Code</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+
+    <div class="skills" id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skillCards">
+        <div class="skillCard">
+          <h2 class="skillTitle">Programming Languages</h2>
+          <div class="skillBox">
+            <div class="skillList">
+              <div class="python listItem">
+                <i class="fa-brands fa-2xl fa-python"></i>
+                <p>Python</p>
+              </div>
+              <div class="javascript listItem">
+                <i class="fa-brands fa-2xl fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skillCard">
+          <h2 class="skillTitle">Web Development</h2>
+          <div class="skillBox">
+            <div class="skillList">
+              <div class="html listItem">
+                <i class="fa-brands fa-2xl fa-html5"></i>
+                <p>HTML</p>
+              </div>
+              <div class="css listItem">
+                <i class="fa-brands fa-2xl fa-css3-alt"></i>
+                <p>CSS</p>
+              </div>
+              <div class="react listItem">
+                <i class="fa-brands fa-2xl fa-react"></i>
+                <p>React</p>
+              </div>
+              <div class="nodejs listItem">
+                <i class="fa-brands fa-2xl fa-node-js"></i>
+                <p>Node.js</p>
+              </div>
+              <div class="express listItem">
+                <i class="fa-brands fa-2xl fa-node-js"></i>
+                <p>Express</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skillCard">
+          <h2 class="skillTitle">Database Management</h2>
+          <div class="skillBox">
+            <div class="skillList">
+              <div class="mongodb listItem">
+                <i class="fa-brands fa-2xl fa-node-js"></i>
+                <p>MongoDB</p>
+              </div>
+              <div class="mysql listItem">
+                <i class="fa-brands fa-2xl fa-node-js"></i>
+                <p>MySQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skillCard">
+          <h2 class="skillTitle">Technologies and Tools</h2>
+          <div class="skillBox">
+            <div class="skillList">
+              <div class="git listItem">
+                <i class="fa-brands fa-2xl fa-git-alt"></i>
+                <p>Git</p>
+              </div>
+              <div class="github listItem">
+                <i class="fa-brands fa-2xl fa-github"></i>
+                <p>GitHub</p>
+              </div>
+              <div class="redux listItem">
+                <i class="fa-brands fa-2xl fa-react"></i>
+                <p>Redux</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Education -->
+    <div class="education" id="education">
+      <h1 class="title">Education</h1>
+      <div class="educationCards">
+        <div class="educationCard">
+          <p class="date">2021 - 2025</p>
+          <h2 class="title">B.Sc. in Computer Science</h2>
+          <p class="institute">Brac University</p>
+          <p class="gpa">CGPA: 3.41</p>
+        </div>
+        <div class="educationCard">
+          <p class="date">2023-2024</p>
+          <h2 class="title">FullStack Web Development</h2>
+          <p class="institute">Udemy</p>
+          <p class="gpa">Grade: A+</p>
+        </div>
+      </div>
+      <div class="educationCards">
+        <div class="educationCard">
+          <p class="date">2018-2020</p>
+          <h2 class="title">HSC</h2>
+          <p class="institute">St.Gregory's High School & College</p>
+          <p class="gpa">GPA: 5.00</p>
+        </div>
+        <div class="educationCard">
+          <p class="date">2016-2018</p>
+          <h2 class="title">SSC</h2>
+          <p class="institute">St.Gregory's High School & College</p>
+          <p class="gpa">GPA: 4.89</p>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="contact" id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contactMain">
+        <div class="contactIcons">
+          <h2 class="title">Get In Touch</h2>
+          <p class="description">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision.
+            <br /><br />
+            If you have any questions or would like to get in touch, feel free
+            to reach out to me via email or connect with me on LinkedIn.
+          </p>
+          <a href="mailto:mortuza.aziz.47@gmail.com" target="_blank">
+            <i class="fa-regular fa-envelope fa-xl"></i>
+          </a>
+          <a href="https://github.com/MdFahim85" target="_blank">
+            <i class="fa-brands fa-github fa-xl"></i>
+          </a>
+          <a href="https://linkedin.com/in/md-fahim-8b9b04330/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+          </a>
+          <a href="tel:+8801957939711">
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+          </a>
+        </div>
+        <div class="contactForm">
+          <form class="form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+            ></textarea>
+            <button class="startBtn btn contBtn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footerLeft">
+        <h2 class="title">© 2025 Md. Fahim. All Rights Reserved.</h2>
+      </div>
+      <div class="footerRight">
+        <a href="mailto:mortuza.aziz.47@gmail.com" target="_blank">
+          <i class="fa-regular fa-envelope fa-xl"></i>
+        </a>
+        <a href="https://github.com/MdFahim85" target="_blank">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a href="https://linkedin.com/in/md-fahim-8b9b04330/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+        </a>
+        <a href="tel:+8801957939711">
+          <i class="fa-brands fa-whatsapp fa-xl"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
