@@ -4,305 +4,582 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
     <!-- Nav -->
-    <nav>
-      <div class="nav">
-        <a href="#home" class="navItem">Home</a>
-        <a href="#about" class="navItem">About</a>
-        <a href="#projects" class="navItem">Projects</a>
-        <a href="#skills" class="navItem">Skills</a>
-        <a href="#education" class="navItem">Education</a>
-        <a href="#contact" class="navItem">Contact</a>
+    <nav id="mainNav" class="navbar fixed-top navbar-expand-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <span class="fs-3 fw-bold brand" href="#">Fahim</span>
+          </div>
+        </div>
+        <div class="col-4 text-end">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav fw-bold">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
     <!-- Hero -->
-    <div class="hero">
-      <div class="heroImage">
-        <div class="myPfp">
-          <img src="assets/myPfp.png" alt="myPfp" class="myPfp" />
+    <section class="heroContainer">
+      <div class="container heroBox">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 px-0 mx-0">
+            <div class="container-fluid">
+              <img
+                src="assets/myPfp.png"
+                alt=""
+                class="img-fluid"
+                id="hero-image"
+              />
+            </div>
+          </div>
+          <div class="col-12 text-lg-end col-lg-6 mt-2 text-center px-0 mx-0">
+            <h1 class="display-5 fw-bold title">Hi, I'm Md. Fahim</h1>
+            <p class="fs-4 fw-bolder description">
+              Computer Science Student & MERN Developer
+            </p>
+            <a href="#projects"
+              ><button
+                type="button"
+                id="viewWork"
+                class="fw-medium btn py-2 px-4"
+              >
+                View My Work
+              </button></a
+            >
+            <a href="#contact"
+              ><button
+                type="button"
+                id="contactBtn"
+                class="fw-medium btn my-2 py-2 px-4"
+              >
+                Contact Me
+              </button></a
+            >
+            <div
+              class="row me-1 mt-2 justify-content-center justify-content-lg-end"
+            >
+              <div class="col-1">
+                <a
+                  class="heroIcon"
+                  href="https://www.linkedin.com/in/md-fahim-8b9b04330/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in fa-xl"></i
+                ></a>
+              </div>
+              <div class="col-1">
+                <a
+                  class="heroIcon"
+                  href="https://github.com/MdFahim85"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fa-xl"></i
+                ></a>
+              </div>
+              <div class="col-1">
+                <a class="heroIcon" href="mailto:mortuza.aziz.47@gmail.com">
+                  <i class="fa-regular fa-envelope fa-xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="heroSection">
-        <h1 class="title">I'm a</h1>
-        <h1 class="title dark">Software Developer</h1>
-        <p class="description">
-          I am a software engineer with a passion for building
-          <span>web applications</span>. I have experience in various
-          <span>programming languages</span> and <span>frameworks</span> and I
-          am always eager to learn new technologies.
-        </p>
-        <span class="buttons">
-          <a href="#about"><button class="startBtn btn">Get Started</button></a>
-          <a href="assets/Md_Fahim_CV.pdf" download>
-            <button class="cvBtn btn">Download Resume</button></a
-          >
-        </span>
-        <div class="heroIcons">
-          <a href="https://github.com/MdFahim85" target="_blank">
-            <i class="fa-brands fa-github fa-xl"></i>
-          </a>
-          <a href="https://linkedin.com/in/md-fahim-8b9b04330/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-          </a>
-          <a href="mailto:mortuza.aziz.47@gmail.com" target="_blank">
-            <i class="fa-regular fa-envelope fa-xl"></i>
-          </a>
-          <a href="tel:+8801957939711">
-            <i class="fa-brands fa-whatsapp fa-xl"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    </section>
+
     <!-- About Me -->
-    <div class="aboutMe" id="about">
-      <div class="aboutInfo">
-        <h1 class="title">About Me</h1>
-        <p class="dark aboutDescription">
-          I am a software engineer with a passion for building web applications.
-          I have experience in various programming languages and frameworks and
-          I am always eager to learn new technologies.<br /><br />
-          I enjoy solving complex problems and creating efficient solutions. I
-          am a team player and I believe that collaboration is key to success.
-        </p>
-        <a href="#projects"
-          ><button class="startBtn btn">View My Work</button>
-        </a>
+
+    <section id="about" class="aboutContainer">
+      <div class="about text-center">
+        <h1 class="fw-bolder aboutTitle">About Me</h1>
+        <span class="underLine"></span>
       </div>
-      <div class="aboutPhoto">
-        <img src="assets/myPfp.png" alt="myPfp" class="aboutPhoto" />
+      <div class="container align-items-start mt-5">
+        <div class="row">
+          <div class="col-12 text-lg-start col-lg-6 text-justify">
+            <p class="semibold aboutDescrip">
+              I'm a Computer Science student at BRAC University with a passion
+              for building web applications and exploring machine learning.
+              Currently focused on MERN stack development, I enjoy creating
+              responsive, user-friendly applications that solve real-world
+              problems.<br /><br />
+              Additionally, I'm an experienced graphic designer with over 100
+              successful projects on Fiverr, and I'm always exploring new
+              technologies to expand my skill set.
+            </p>
+            <div id="iconBox" class="fw-medium row row-sm-center my-5">
+              <div class="col-1">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+              </div>
+              <div class="col ps-3">
+                <span>Dhaka, Bangladesh</span>
+              </div>
+              <div id="iconBox" class="fw-medium row mt-4">
+                <div class="col-1">
+                  <i class="fa-solid fa-envelope fa-xl"></i>
+                </div>
+                <div class="col ps-3">
+                  <span>mortuza.aziz.47@gmail.com</span>
+                </div>
+                <div id="iconBox" class="fw-medium row mt-4">
+                  <div class="col-1">
+                    <i class="fa-solid fa-phone fa-xl"></i>
+                  </div>
+                  <div class="col ps-3">
+                    <span>+8801957939711</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="achievement"
+            class="col-12 text-lg-start text-end col-lg-6 text-justify ps-5 align-items-sm-start"
+          >
+            <div class="row ps-5">
+              <div class="col-12">
+                <h2 class="fw-bolder achieve">Achievments</h2>
+              </div>
+              <div class="col-12">
+                <div id="achieve" class="my-3">
+                  <h5 class="fw-bold achieves">
+                    <i class="fa-solid fa-star pe-2"></i>Freelance Graphic
+                    Designer
+                  </h5>
+                  <p class="aboutDescrip pt-2">
+                    Delivered 100+ creative projects on Fiverr with consistent
+                    5-star reviews.
+                  </p>
+                </div>
+                <div id="achieve" class="my-3">
+                  <h5 class="fw-bold achieves">
+                    <i class="fa-solid fa-gamepad pe-2"></i>Gaming Enthusiast
+                  </h5>
+                  <p class="aboutDescrip pt-2">
+                    Follows trends in eSports, game development, and VR gaming.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <h2 class="fw-bolder achieve mt-3">Certifications</h2>
+              </div>
+              <div class="col-12">
+                <div id="achieve" class="my-3">
+                  <h5 class="fw-bold achieves">
+                    <i class="fa-solid fa-certificate pe-2"></i>Professional
+                    Graphic Design
+                  </h5>
+                  <p class="aboutDescrip pt-2">
+                    Certified by Creative IT Institute, June 2021 Focus on Adobe
+                    Photoshop, Illustrator, Branding, UI
+                  </p>
+                </div>
+                <div id="achieve" class="my-3">
+                  <h5 class="fw-bold achieves">
+                    <i class="fa-solid fa-certificate pe-2"></i>Responsive Web
+                    Design
+                  </h5>
+                  <p class="aboutDescrip pt-2">
+                    Certified by freeCodeCamp, 2023 60-hour course in web design
+                    using HTML, CSS, Flexbox
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Projects -->
-    <div class="projects" id="projects">
-      <h1 class="title">Projects</h1>
-      <div class="projectCards">
-        <div class="projectCard">
-          <h2 class="title">Online PC Shop</h2>
-          <p class="projectDescription">
-            A complete e-commerce platform built using the MERN stack (MongoDB,
-            Express.js, React, Node.js). Features include product catalog,
-            shopping cart, user authentication with JWT, and admin dashboard.
-          </p>
-          <div class="techs">
-            <span class="tech"><p>React</p></span>
-            <span class="tech"><p>Node.js</p></span>
-            <span class="tech"><p>Express</p></span>
-            <span class="tech"><p>MongoDB</p></span>
-            <span class="tech"><p>JWT</p></span>
-            <span class="tech"><p>Redux</p></span>
+
+    <section id="projects" class="aboutContainer">
+      <div class="about text-center">
+        <h1 class="fw-bolder aboutTitle">Projects</h1>
+        <span class="underLine"></span>
+      </div>
+      <div class="container align-items-start align-items-sm-center mt-5">
+        <div class="row">
+          <div class="col-12 text-lg-start col-lg-6 text-justify">
+            <div class="container-fluid p-5 mb-5 skillCard">
+              <h2 class="fw-bold achieve">Online PC Shop</h2>
+              <div
+                class="tinyBox px-2 py-1 text-center rounded text-light fw-semibold"
+              >
+                2024
+              </div>
+              <p class="achieveDescrip pt-3 pe-5">
+                A complete e-commerce platform built using the MERN stack
+                (MongoDB, Express.js, React, Node.js). Features include product
+                catalog, shopping cart, user authentication with JWT, and admin
+                dashboard.
+              </p>
+              <div class="row text-center mt-2">
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    React
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    Node.Js
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    Express
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    MongoDB
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    JWT
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    REDUX
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4 mx-0">
+                <div class="col">
+                  <a href="https://github.com/MdFahim85/Online-PC-Shop"
+                    ><button type="button" id="darkBtn" class="fw-medium btn">
+                      <i class="fa-brands fa-github fa-xl pe-2"></i>Source Code
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="https://github.com/MdFahim85/Online-PC-Shop"
-            ><button class="startBtn btn">Source Code</button></a
+
+          <div
+            id="achievement"
+            class="col-12 text-start col-lg-6 text-justify mb-5"
           >
-        </div>
-        <div class="projectCard">
-          <h2 class="title">Chess Game</h2>
-          <p class="projectDescription">
-            A machine learning project that analyzes chess games to predict
-            outcomes. Trained on 100K+ chess matches, analyzing opening
-            strategies, player ratings, and game metadata.
-          </p>
-          <div class="techs">
-            <span class="tech"><p>Python</p></span>
-            <span class="tech"><p>Pandas</p></span>
-            <span class="tech"><p>NumPy</p></span>
-            <span class="tech"><p>Matplotlib</p></span>
-            <span class="tech"><p>Scikit-learn</p></span>
+            <div class="container-fluid p-5 skillCard">
+              <h2 class="fw-bold achieve">
+                Chess Game Prediction Using Machine Learning
+              </h2>
+              <div
+                class="tinyBox px-2 py-1 text-center rounded text-light fw-semibold"
+              >
+                2023
+              </div>
+              <p class="aboutDescrip pt-3 pe-5">
+                A machine learning project that analyzes chess games to predict
+                outcomes. Trained on 100K+ chess matches, analyzing opening
+                strategies, player ratings, and game metadata.
+              </p>
+              <div class="row text-center mt-2">
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    Python
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    Scikit
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="skillBox m-2 px-2 py-1 text-center fw-medium">
+                    Pandas
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4 mx-0">
+                <div class="col-10">
+                  <a
+                    href="https://github.com/MdFahim85/Machine-Learning-Project"
+                    ><button type="button" id="darkBtn" class="fw-medium btn">
+                      <i class="fa-brands fa-github fa-xl pe-2"></i>Source Code
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="https://github.com/MdFahim85/Machine-Learning-Project"
-            ><button class="startBtn btn">Source Code</button></a
-          >
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Skills -->
 
-    <div class="skills" id="skills">
-      <h1 class="title">Skills</h1>
-      <div class="skillCards">
-        <div class="skillCard">
-          <h2 class="skillTitle">Programming Languages</h2>
-          <div class="skillBox">
-            <div class="skillList">
-              <div class="python listItem">
-                <i class="fa-brands fa-2xl fa-python"></i>
-                <p>Python</p>
+    <section id="skills" class="aboutContainer">
+      <div class="about text-center">
+        <h1 class="display-6 fw-bold aboutTitle">Skills</h1>
+        <span class="underLine"></span>
+      </div>
+      <div class="container justify-content-center">
+        <div class="row container-fluid mb-5">
+          <div class="col-12 text-lg-start col-lg-3 text-justify mb-5">
+            <h5 class="fw-bold sideline ps-2">Programming Languages</h5>
+            <div class="row align-items-end">
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-brands fa-python fa-xl skillIcon"></i><br />Python
               </div>
-              <div class="javascript listItem">
-                <i class="fa-brands fa-2xl fa-js"></i>
-                <p>JavaScript</p>
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-brands fa-js fa-xl skillIcon"></i><br />JavaScript
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="skillCard">
-          <h2 class="skillTitle">Web Development</h2>
-          <div class="skillBox">
-            <div class="skillList">
-              <div class="html listItem">
-                <i class="fa-brands fa-2xl fa-html5"></i>
-                <p>HTML</p>
-              </div>
-              <div class="css listItem">
-                <i class="fa-brands fa-2xl fa-css3-alt"></i>
-                <p>CSS</p>
-              </div>
-              <div class="react listItem">
-                <i class="fa-brands fa-2xl fa-react"></i>
-                <p>React</p>
-              </div>
-              <div class="nodejs listItem">
-                <i class="fa-brands fa-2xl fa-node-js"></i>
-                <p>Node.js</p>
-              </div>
-              <div class="express listItem">
-                <i class="fa-brands fa-2xl fa-node-js"></i>
-                <p>Express</p>
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-solid fa-code fa-xl skillIcon"></i><br />C++
               </div>
             </div>
           </div>
-        </div>
-        <div class="skillCard">
-          <h2 class="skillTitle">Database Management</h2>
-          <div class="skillBox">
-            <div class="skillList">
-              <div class="mongodb listItem">
-                <i class="fa-brands fa-2xl fa-node-js"></i>
-                <p>MongoDB</p>
+          <div class="col-12 text-lg-start col-lg-3 text-justify mb-5">
+            <h5 class="fw-bold sideline ps-2">Web Development</h5>
+            <div class="row align-items-end">
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-brands fa-html5 fa-xl skillIcon"></i><br />HTML5
               </div>
-              <div class="mysql listItem">
-                <i class="fa-brands fa-2xl fa-node-js"></i>
-                <p>MySQL</p>
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-brands fa-css3-alt fa-xl skillIcon"></i><br />CSS
+              </div>
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-brands fa-react fa-xl skillIcon"></i><br />React
+              </div>
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-brands fa-node-js fa-xl skillIcon"></i><br />NodeJs
               </div>
             </div>
           </div>
-        </div>
-        <div class="skillCard">
-          <h2 class="skillTitle">Technologies and Tools</h2>
-          <div class="skillBox">
-            <div class="skillList">
-              <div class="git listItem">
-                <i class="fa-brands fa-2xl fa-git-alt"></i>
-                <p>Git</p>
+          <div class="col-12 text-lg-start col-lg-3 text-justify mb-5">
+            <h5 class="fw-bold sideline ps-2">Database</h5>
+            <div class="row align-items-end">
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-solid fa-database fa-xl skillIcon"></i
+                ><br />MongoDB
               </div>
-              <div class="github listItem">
-                <i class="fa-brands fa-2xl fa-github"></i>
-                <p>GitHub</p>
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-solid fa-database fa-xl skillIcon"></i><br />MySQL
               </div>
-              <div class="redux listItem">
-                <i class="fa-brands fa-2xl fa-react"></i>
-                <p>Redux</p>
+            </div>
+          </div>
+          <div class="col-12 text-lg-start col-lg-3 text-justify mb-5">
+            <h5 class="fw-bold sideline ps-2">Tools & Technologies</h5>
+            <div class="row align-items-end">
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-brands fa-react fa-xl skillIcon"></i><br />Redux
+              </div>
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-brands fa-github fa-xl skillIcon"></i><br />Git
+              </div>
+              <div
+                class="col-6 skillIconBox text-center align-items-center pt-4 ms-4 mt-4 rounded fw-medium"
+              >
+                <i class="fa-solid fa-pen-nib fa-xl skillIcon"></i><br />Graphic
+                Design
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- Education -->
-    <div class="education" id="education">
-      <h1 class="title">Education</h1>
-      <div class="educationCards">
-        <div class="educationCard">
-          <p class="date">2021 - 2025</p>
-          <h2 class="title">B.Sc. in Computer Science</h2>
-          <p class="institute">Brac University</p>
-          <p class="gpa">CGPA: 3.41</p>
-        </div>
-        <div class="educationCard">
-          <p class="date">2023-2024</p>
-          <h2 class="title">FullStack Web Development</h2>
-          <p class="institute">Udemy</p>
-          <p class="gpa">Grade: A+</p>
+
+    <section id="education" class="aboutContainer">
+      <div class="about text-center">
+        <h1 class="fw-bolder aboutTitle">Education</h1>
+        <span class="underLine"></span>
+      </div>
+      <div class="container align-items-start align-items-sm-center mt-5">
+        <div class="row">
+          <div class="col-12 text-lg-start col-lg-4 text-justify">
+            <div class="container-fluid p-5 mb-5 skillCard">
+              <h2 class="fw-bolder achieve">B.Sc. in Computer Science</h2>
+              <div
+                class="eduBox px-2 py-1 text-center rounded text-light fw-semibold"
+              >
+                2021-2025
+              </div>
+              <p class="aboutDescrip pt-3 pe-5">
+                BRAC University, Dhaka,Bangladesh
+              </p>
+              <p class="aboutDescrip pe-5">CGPA: 3.41</p>
+            </div>
+          </div>
+
+          <div
+            id="achievement"
+            class="col-12 text-start col-lg-4 text-justify mb-5"
+          >
+            <div class="container-fluid p-5 skillCard">
+              <h2 class="fw-bolder achieve">
+                Higher Secondary School Certificate
+              </h2>
+              <div
+                class="eduBox px-2 py-1 text-center rounded text-light fw-semibold"
+              >
+                2018-2020
+              </div>
+              <p class="aboutDescrip pt-3 pe-5">
+                St. Gregory's High School and College, Dhaka, Bangladesh
+              </p>
+              <p class="aboutDescrip pe-5">GPA: 5.00</p>
+            </div>
+          </div>
+          <div
+            id="achievement"
+            class="col-12 text-start col-lg-4 text-justify mb-5"
+          >
+            <div class="container-fluid p-5 skillCard">
+              <h2 class="fw-bolder achieve">Secondary School Certificate</h2>
+              <div
+                class="eduBox px-2 py-1 text-center rounded text-light fw-semibold"
+              >
+                2016-2018
+              </div>
+              <p class="aboutDescrip pt-3 pe-5">
+                St. Gregory's High School and College, Dhaka, Bangladesh
+              </p>
+              <p class="aboutDescrip pe-5">GPA: 4.89</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="educationCards">
-        <div class="educationCard">
-          <p class="date">2018-2020</p>
-          <h2 class="title">HSC</h2>
-          <p class="institute">St.Gregory's High School & College</p>
-          <p class="gpa">GPA: 5.00</p>
-        </div>
-        <div class="educationCard">
-          <p class="date">2016-2018</p>
-          <h2 class="title">SSC</h2>
-          <p class="institute">St.Gregory's High School & College</p>
-          <p class="gpa">GPA: 4.89</p>
-        </div>
-      </div>
-    </div>
+    </section>
+
     <!-- Contact -->
-    <div class="contact" id="contact">
-      <h1 class="title">Contact Me</h1>
-      <div class="contactMain">
-        <div class="contactIcons">
-          <h2 class="title">Get In Touch</h2>
-          <p class="description">
-            I'm always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision.
-            <br /><br />
-            If you have any questions or would like to get in touch, feel free
-            to reach out to me via email or connect with me on LinkedIn.
-          </p>
-          <a href="mailto:mortuza.aziz.47@gmail.com" target="_blank">
-            <i class="fa-regular fa-envelope fa-xl"></i>
-          </a>
-          <a href="https://github.com/MdFahim85" target="_blank">
-            <i class="fa-brands fa-github fa-xl"></i>
-          </a>
-          <a href="https://linkedin.com/in/md-fahim-8b9b04330/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-          </a>
-          <a href="tel:+8801957939711">
-            <i class="fa-brands fa-whatsapp fa-xl"></i>
-          </a>
-        </div>
-        <div class="contactForm">
-          <form class="form">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Your Message"
-            ></textarea>
-            <button class="startBtn btn contBtn" type="submit">Send</button>
-          </form>
+
+    <section id="contact" class="aboutContainer">
+      <div class="about text-center">
+        <h1 class="fw-bolder aboutTitle">Contact</h1>
+        <span class="underLine"></span>
+      </div>
+      <div class="container mt-2">
+        <div class="container-fluid mb-5">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <a href="mailto:mortuza.aziz.47@gmail.com"
+                ><i class="fa-solid fa-envelope fa-2xl purple"></i
+              ></a>
+              <h5 class="fw-bolder achieve my-2">Email</h5>
+              <p class="skillIcon pe-5">mortuza.aziz.47@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="tel:+8801957939711">
+                <i class="fa-brands fa-whatsapp fa-2xl whatsApp"></i
+              ></a>
+              <h5 class="fw-bolder achieve my-2">Phone</h5>
+              <p class="skillIcon pe-5">+8801957939711</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <a
+                href="https://www.linkedin.com/in/md-fahim-8b9b04330"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin purple fa-2xl"></i
+              ></a>
+              <h5 class="fw-bolder achieve my-2">LinkedIn</h5>
+              <p class="skillIcon pe-5">Md.Fahim</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="https://github.com/MdFahim85" target="_blank"
+                ><i class="fa-brands fa-square-github purple fa-2xl"></i
+              ></a>
+              <h5 class="fw-bolder achieve my-2">Github</h5>
+              <p class="skillIcon pe-5">MdFahim85</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <footer>
-      <div class="footerLeft">
-        <h2 class="title">© 2025 Md. Fahim. All Rights Reserved.</h2>
-      </div>
-      <div class="footerRight">
-        <a href="mailto:mortuza.aziz.47@gmail.com" target="_blank">
-          <i class="fa-regular fa-envelope fa-xl"></i>
-        </a>
-        <a href="https://github.com/MdFahim85" target="_blank">
-          <i class="fa-brands fa-github fa-xl"></i>
-        </a>
-        <a href="https://linkedin.com/in/md-fahim-8b9b04330/" target="_blank">
-          <i class="fa-brands fa-linkedin fa-xl"></i>
-        </a>
-        <a href="tel:+8801957939711">
-          <i class="fa-brands fa-whatsapp fa-xl"></i>
-        </a>
+    </section>
+
+    <footer class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12 p-3 description fw-bolder">
+          © 2025 Md. Fahim. All Rights Reserved.
+        </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.getElementById("mainNav");
+        if (window.scrollY > nav.offsetHeight) {
+          nav.classList.add("scrolled");
+          nav.classList.remove("default");
+        } else {
+          nav.classList.remove("scrolled");
+          nav.classList.add("default");
+        }
+      });
+    </script>
   </body>
 </html>
