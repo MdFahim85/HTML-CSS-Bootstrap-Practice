@@ -45,20 +45,29 @@ ol {
 
 /* My CSS */
 
+:root {
+  --main-color: #27548a;
+  --bg-1: white;
+  --bg-2: #f5f5f5;
+  --text: rgb(16, 16, 22);
+  --transition: all 0.3s ease-in-out;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+}
+
 /* Icons */
 
 .heroIcon {
-  color: #ffffff;
+  color: var(--bg-1);
   margin: 1rem;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 }
 .heroIcon:hover {
-  color: #27548a;
+  color: var(--main-color);
 }
 .fa-brands,
 .fa-regular,
 .fa-solid {
-  transition: all 0.2s ease-in-out;
+  transition: var(--transition);
 }
 
 .fa-brands:hover,
@@ -72,7 +81,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--bg-1);
   font-size: 16px;
   font-family: DM Serif, sans-serif;
 }
@@ -94,23 +103,22 @@ h6 {
 }
 
 .navbar.scrolled {
-  background-color: #27548a;
+  background-color: var(--main-color);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
 }
 
 .navbar .brand {
-  color: white;
+  color: var(--bg-1);
 }
 
 .navbar-nav .nav-link {
   font-size: 1rem;
-  color: white;
-  transition: all 0.3s ease-in-out;
+  color: var(--bg-1);
+  transition: var(--transition);
 }
 
 .navbar-nav .nav-link:hover {
-  border-bottom: white 2px solid;
   transform: translateY(-5px);
 }
 /* Hero */
@@ -133,32 +141,32 @@ h6 {
 
 .title,
 .description {
-  color: white;
+  color: var(--bg-1);
 }
 #viewWork {
-  background-color: #27548a;
-  color: white;
-  transition: all 0.3s ease-in-out;
+  background-color: var(--main-color);
+  color: var(--bg-1);
+  transition: var(--transition);
 }
 #viewWork:hover {
   background-color: #173861;
   transform: translateY(-5px);
 }
 #contactBtn {
-  border: #27548a 2px solid;
+  border: var(--main-color) 2px solid;
   background-color: none;
-  color: white;
-  transition: all 0.3s ease-in-out;
+  color: var(--bg-1);
+  transition: var(--transition);
 }
 #contactBtn:hover {
-  background-color: #27548a;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--bg-1);
   transform: translateY(-5px);
 }
 /* About */
 
 .aboutContainer {
-  background-color: #ffffff;
+  background-color: var(--bg-1);
 }
 
 .about {
@@ -172,20 +180,20 @@ h6 {
 .underLine {
   width: 50px;
   padding: 0 40px;
-  border-top: #27548a 5px solid;
+  border-top: var(--main-color) 5px solid;
 }
 
 .aboutDescrip {
   color: rgb(98, 98, 102);
 }
 #iconBox {
-  color: #27548a;
+  color: var(--main-color);
 }
 #achieve {
   background-color: #f5f5f5;
   padding: 1rem;
   border-radius: 20px;
-  transition: all 0.2s ease-in-out;
+  transition: var(--transition);
 }
 #achieve:hover,
 .skillCard:hover,
@@ -199,7 +207,7 @@ h6 {
 }
 
 .achieves {
-  color: #27548a;
+  color: var(--main-color);
 }
 
 /* Projects */
@@ -209,55 +217,55 @@ h6 {
 }
 
 .skillCard {
-  background-color: #ffffff;
+  background-color: var(--bg-1);
   border-radius: 15px;
-  transition: all 0.2s ease-in-out;
+  transition: var(--transition);
 }
 
 .tinyBox {
   width: 60px;
   height: 30px;
-  background-color: #27548a;
+  background-color: var(--main-color);
 }
 
 .skillBox {
   width: 100px;
   height: 30px;
   background-color: #f5f5f5;
-  color: #27548a;
+  color: var(--main-color);
   border-radius: 10px;
 }
 
 #darkBtn {
-  border: #27548a 2px solid;
+  border: var(--main-color) 2px solid;
   background-color: none;
-  color: #27548a;
-  transition: all 0.3s ease-in-out;
+  color: var(--main-color);
+  transition: var(--transition);
 }
 #darkBtn:hover {
-  background-color: #27548a;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--bg-1);
   transform: translateY(-5px);
 }
 
 /* Skills */
 
 .sideline {
-  border-left: #27548a 5px solid;
+  border-left: var(--main-color) 5px solid;
 }
 
 .skillIcon {
-  color: #27548a;
+  color: var(--main-color);
 }
 .skillIconBox {
   height: 100px;
   width: 110px;
   background-color: #f5f5f5;
   color: rgb(16, 16, 22);
-  transition: all 0.2s ease-in-out;
+  transition: var(--transition);
 }
 .skillIconBox:hover {
-  background-color: white;
+  background-color: var(--bg-1);
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
 }
@@ -268,16 +276,16 @@ h6 {
 .eduBox {
   width: 120px;
   height: 30px;
-  background-color: #27548a;
+  background-color: var(--main-color);
 }
 /* Contact */
 
 .whatsApp,
 .purple {
-  color: #27548a;
+  color: var(--main-color);
 }
 
 footer {
-  background-color: #173861;
+  background-color: var(--main-color);
   height: auto;
 }

@@ -22,7 +22,7 @@
       <div class="container">
         <div class="row">
           <div class="col-8">
-            <span class="fs-3 fw-bold brand" href="#">Fahim</span>
+            <a class="fs-3 fw-bold brand" href="#home">Fahim</a>
           </div>
         </div>
         <div class="col-4 text-end">
@@ -35,10 +35,10 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="navbar-toggler-icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav fw-bold">
+            <ul class="navbar-nav fw-bold py-2">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
@@ -82,13 +82,13 @@
             <p class="fs-4 fw-bolder description">
               Computer Science Student & MERN Developer
             </p>
-            <a href="#projects"
+            <a href="assets/Md_Fahim_CV.pdf" download
               ><button
                 type="button"
                 id="viewWork"
                 class="fw-medium btn py-2 px-4"
               >
-                View My Work
+                View My Resume
               </button></a
             >
             <a href="#contact"
@@ -572,17 +572,6 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
-    <script>
-      window.addEventListener("scroll", function () {
-        const nav = document.getElementById("mainNav");
-        if (window.scrollY > nav.offsetHeight) {
-          nav.classList.add("scrolled");
-          nav.classList.remove("default");
-        } else {
-          nav.classList.remove("scrolled");
-          nav.classList.add("default");
-        }
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
