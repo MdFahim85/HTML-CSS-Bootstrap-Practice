@@ -107,6 +107,12 @@ h6 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
 }
+.navbar.scrolledDark {
+  background-color: var(--text);
+  text-decoration-color: var(--main-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
+}
 
 .navbar .brand {
   color: var(--bg-1);
@@ -121,6 +127,19 @@ h6 {
 .navbar-nav .nav-link:hover {
   transform: translateY(-5px);
 }
+
+.modeToggle {
+  border: none;
+}
+
+.fa-sun {
+  color: var(--bg-1);
+}
+
+.fa-moon {
+  color: var(--bg-1);
+}
+
 /* Hero */
 .heroContainer {
   height: 100vh;
@@ -148,6 +167,7 @@ h6 {
   color: var(--bg-1);
   transition: var(--transition);
 }
+
 #viewWork:hover {
   background-color: #173861;
   transform: translateY(-5px);
@@ -169,12 +189,17 @@ h6 {
   background-color: var(--bg-1);
 }
 
+.aboutContainer.dark {
+  background-color: var(--text);
+}
+
 .about {
   padding-top: 100px;
 }
 
-.aboutTitle {
-  color: rgb(16, 16, 22);
+.aboutTitle,
+.achieve {
+  color: var(--text);
 }
 
 .underLine {
@@ -190,20 +215,17 @@ h6 {
   color: var(--main-color);
 }
 #achieve {
-  background-color: #f5f5f5;
+  background-color: var(--bg-2);
   padding: 1rem;
   border-radius: 20px;
   transition: var(--transition);
 }
+
 #achieve:hover,
 .skillCard:hover,
 .skillIconBox:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.075);
-}
-
-.achieve {
-  color: rgb(16, 16, 22);
 }
 
 .achieves {
@@ -288,4 +310,10 @@ h6 {
 footer {
   background-color: var(--main-color);
   height: auto;
+}
+.footer.scrolledDark {
+  background-color: var(--text);
+  text-decoration-color: var(--main-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
 }
