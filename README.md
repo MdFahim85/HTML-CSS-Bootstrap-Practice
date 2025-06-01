@@ -2,6 +2,10 @@
 
 A collection of mini-projects and UI components built while practicing modern web development with **HTML**, **CSS**, **Bootstrap**, and basic **JavaScript**.
 
+## 🔗 Live Demo
+
+[View Project](https://mdfahim85.github.io/HTML-CSS-Bootstrap-Practice/)
+
 ## ✨ Features
 
 - Semantic and responsive web layouts
